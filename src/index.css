@@ -166,8 +166,8 @@ code {
     .clear-button {
         width: max-content;
         margin: 40px auto 10px auto;
-        height: 3rem;
-        width: 10rem;
+        height: 2.5rem;
+        width: 5rem;
         background: palevioletred;
         font-size: 1rem;
         font-weight: bold;
