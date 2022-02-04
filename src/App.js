@@ -2,8 +2,8 @@ import React from 'react';
 
 const App = () => {
   return (
-    <div>
-        <h1>Hello World</h1>
+    <div className='app-header'>
+        <h1 className='heading-text'>Tic Tac Toe</h1>
     </div>
     );
 };
