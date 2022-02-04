@@ -27,7 +27,7 @@ const Board = () => {
             clearGame();
             alert(`Ta da ! ${winner} won the Game !`)
         }
-    }, [gameState])
+    }, [gameState]) // eslint-disable-line react-hooks/exhaustive-deps
 
     const checkWinner = () => {
         const winningCombinations = [
