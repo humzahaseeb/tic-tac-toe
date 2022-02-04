@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Square from './Square';
 import swal from 'sweetalert';
+import RefreshIcon from '@material-ui/icons/Refresh';
 
 
 const initialState = ["", "", "", "", "", "", "", "", ""];
@@ -78,8 +79,17 @@ const Board = () => {
              <Square className='' state={gameState[8]} onClick={() => onUserClicked(8)}/>
         </div>
 
-        <button className='clear-button' onClick={clearGame}>Reset</button>
-        <p className='fc-aqua fw-600'>By Humza</p>
+        <button
+            className='clear-button'
+            onClick={clearGame}
+        >
+         <RefreshIcon/>
+        </button>
+        <p
+            className='fc-aqua fw-600'
+        >
+           by <span style={{color: '#1CDBF5'}}>Humza</span>
+        </p>
     </div>
   );
 };
