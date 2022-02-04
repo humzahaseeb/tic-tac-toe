@@ -111,6 +111,7 @@ code {
         font-weight: bolder;
         text-align: center;
         margin: 60px 10px;
+        margin-top: 0rem;
     }
 
     .square {
