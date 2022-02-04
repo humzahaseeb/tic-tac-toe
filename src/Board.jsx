@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Square from './Square';
+import swal from 'sweetalert';
+
 
 const initialState = ["", "", "", "", "", "", "", "", ""];
 
@@ -25,18 +27,20 @@ const Board = () => {
         let winner = checkWinner();
         if (winner) {
             clearGame();
-            alert(`Ta da ! ${winner} won the Game !`)
+            swal("Result", `Ta da ! ${winner} won the Game !`);
         }
     }, [gameState]) // eslint-disable-line react-hooks/exhaustive-deps
 
     const checkWinner = () => {
         const winningCombinations = [
-            [0, 1, 2],
-            [3, 4, 5],
-            [6, 7, 8],
-            [0, 3, 6],
-            [1, 4, 7],
-            [2, 5, 8],
+             [0, 1, 2],
+             [3, 4, 5],
+             [6, 7, 8],
+             [0, 3, 6],
+             [1, 4, 7],
+             [2, 5, 8],
+             [0, 4, 8],
+             [2, 4, 6]
         ];
         for (let i = 0; i < winningCombinations.length; i++) {
             const [a, b, c] = winningCombinations[i];

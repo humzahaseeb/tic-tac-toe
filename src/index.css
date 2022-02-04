@@ -102,6 +102,31 @@ code {
 .clear-button:hover {
     background: #1CDBF5;
 }
+.swal-modal{
+    background: #131A28;
+}
+.swal-title {
+  margin: 0px;
+  font-size: 1.5rem;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+  margin-bottom: 28px;
+  color: aliceblue;
+}
+.swal-text {
+    margin: 0px;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 0.5rem;
+  background-color: palevioletred;
+  font-size: 1rem;
+  border: none;
+}
+.swal-button:hover {
+  background-color: palevioletred;
+}
 
 
 @media only screen and (max-width: 600px) {
