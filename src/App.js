@@ -1,10 +1,9 @@
 import React from 'react';
+import Board from './Board';
 
 const App = () => {
   return (
-    <div className='app-header'>
-        <h1 className='heading-text'>Tic Tac Toe</h1>
-    </div>
+      <Board />
     );
 };
 

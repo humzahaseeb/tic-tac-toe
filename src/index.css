@@ -29,6 +29,7 @@ code {
     font-weight: bolder;
     text-align: center;
     margin: 50px;
+    margin-top: 0rem;
 }
 
 .square {
@@ -38,7 +39,7 @@ code {
     text-align: center;
     color: #1CDBF5;
     font-weight: bolder;
-    padding: 30px;
+    padding: 0.5rem;
 }
 
 .fc-aqua {
@@ -50,7 +51,9 @@ code {
 }
 
 .fw-600 {
+    font-size: 1.2rem;
     font-weight: bolder;
+    margin-top: 0rem;
 }
 
 .row {
@@ -68,21 +71,32 @@ code {
 }
 
 .b-bottom-right {
-    border-right: 15px solid #1CDBF5;
-    border-bottom: 15px solid #1CDBF5;
+    border-right: 0.7rem solid #1CDBF5;
+    border-bottom: 0.7rem solid #1CDBF5;
 }
 
 .b-bottom {
-    border-bottom: 15px solid #1CDBF5;
+    border-bottom: 0.7rem solid #1CDBF5;
 }
 
 .b-right {
-    border-right: 15px solid #1CDBF5;
+    border-right: 0.7rem solid #1CDBF5;
 }
 
 .clear-button {
     width: max-content;
     margin: 40px auto 10px auto;
+    height: 3rem;
+    width: 10rem;
+    background: palevioletred;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer
+}
+.clear-button:hover {
+    background: #1CDBF5;
 }
 
 
@@ -96,8 +110,8 @@ code {
     }
 
     .square {
-        min-width: 80px;
-        min-height: 80px;
+        min-width: 60px;
+        min-height: 60px;
         font-size: 32px;
         font-weight: bolder;
         padding: 15px;
@@ -122,5 +136,13 @@ code {
     .clear-button {
         width: max-content;
         margin: 40px auto 10px auto;
+        height: 3rem;
+        width: 10rem;
+        background: palevioletred;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer
     }
 }
